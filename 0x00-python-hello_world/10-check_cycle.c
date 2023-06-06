@@ -9,21 +9,21 @@
 
 int check_cycle(listint_t *list)
 {
-listint_t *i, *j;
+listint_t *curr, *prev;
 
 	if (list == NULL || list->next == NULL)
 		return (0);
 
-	i = list->next;
-	j = list->next->next;
+	curr = list->next;
+	prev = list->next->next;
 
-	while (i && j && j->next)
+	while (curr && prev && prev->next)
 	{
-		if (i == j)
+		if (curr == prev)
 			return (1);
 
-		i = i->next;
-		hare = j->next->next;
+		curr = curr->next;
+		prev = prev->next->next;
 	}
 
 	return (0);
