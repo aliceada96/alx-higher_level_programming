@@ -4,12 +4,24 @@
 
 
 class Square:
-    """defines the class square"""
+    """defines the class square
+
+    Attributes:
+        __size (int): length of square object
+    """
 
     def __init__(self, size=0):
-        """Initialize a square.
+        """Initialize a square class instance.
+
         Args:
-        size (int): len of square
+            size (int): len of square
+
+        Returns:
+             None
+
+        Raises:
+            Typerror: if size type is not int
+            ValueError: if size <= 0.
         """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
