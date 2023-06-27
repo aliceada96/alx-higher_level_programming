@@ -25,23 +25,21 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = value
 
+    def area(self):
+        """Defines area which calculates area of square.
 
-def area(self):
-    """Defines area which calculates area of square.
+        Returns:
+            Area of square
+        """
+        return (self.__size * self.__size)
 
-    Returns:
-        Area of square
-    """
-    return (self.__size * self.__size)
-
-
-def my_print(self):
-    """Prints in stdout the square using # char"""
-    if (self.__size == 0):
-        print()
-
-    else:
-        for i in range(self.__size):
-            for j in range(self.__size):
-                print("#", end="")
+    def my_print(self):
+        """Prints in stdout the square using # char"""
+        if (self.__size == 0):
             print()
+
+        else:
+            for i in range(self.__size):
+                for j in range(self.__size):
+                    print("#", end="")
+                print()
