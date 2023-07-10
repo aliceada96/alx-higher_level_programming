@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""defines a child Retangle class: inherits from BaseGeometry"""
+"""Defines a child Retangle class: inherits from BaseGeometry"""
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
@@ -20,7 +20,7 @@ class Rectangle(BaseGeometry):
 
     def area(self):
         """Return area of rectangle"""
-        return (self.__width * self.__height)
+        return self.__width * self.__height
 
     def __str__(self):
         """print() prints str() a description of the rectangle"""
