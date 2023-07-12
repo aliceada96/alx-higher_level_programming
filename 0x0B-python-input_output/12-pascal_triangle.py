@@ -4,10 +4,10 @@
 
 def pascal_triangle(n):
     """Returns a list of lists of ints rep pascals triangle
-    
+
     Args:
         n (int): size of triangle
-    
+
     Return: an empty list if n<=0, else a list of lists
     """
     if n <= 0:
