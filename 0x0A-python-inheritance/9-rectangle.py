@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """Defines a child Retangle class: inherits from BaseGeometry"""
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
+Rectangle1 = __import__("8-rectangle").Rectangle
 
 
-class Rectangle(BaseGeometry):
+class Rectangle(Rectangle1):
     """Defines a retangle using BaseGeometry"""
 
     def __init__(self, width, height):
@@ -24,6 +24,6 @@ class Rectangle(BaseGeometry):
 
     def __str__(self):
         """print() prints str() a description of the rectangle"""
-        string = "[" + str(self.__class.__name__) + "] "
+        string = "[" + str(self.__class__.__name__) + "] "
         string += str(self.__width) + "/" + str(self.__height)
         return (string)
