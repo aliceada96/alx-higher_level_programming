@@ -1,4 +1,4 @@
-#!/usr/bin/python3 
+#!/usr/bin/python3
 """Sript that adds all args to a python list & saves them to a file"""
 import json
 import sys
