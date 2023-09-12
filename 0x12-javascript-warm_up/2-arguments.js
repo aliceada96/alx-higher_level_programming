@@ -9,4 +9,3 @@ if (numArguments === 0) {
 } else {
   console.log('Arguments found');
 }
-

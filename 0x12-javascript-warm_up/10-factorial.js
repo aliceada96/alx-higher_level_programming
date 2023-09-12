@@ -10,4 +10,3 @@ function factorial (arg) {
   }
 }
 console.log(factorial(arg));
-

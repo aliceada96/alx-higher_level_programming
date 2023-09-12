@@ -6,4 +6,3 @@ function incrementAndCall (number, theFunction) {
 }
 
 module.exports = incrementAndCall;
-

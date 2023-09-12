@@ -13,4 +13,3 @@ module.exports = {
   incr,
   incrementAndCall
 };
-

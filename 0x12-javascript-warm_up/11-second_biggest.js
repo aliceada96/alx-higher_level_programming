@@ -7,4 +7,3 @@ if (args.length < 4) {
 } else {
   console.log(args.sort().reverse()[1]);
 }
-

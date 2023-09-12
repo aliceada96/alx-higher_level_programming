@@ -10,4 +10,3 @@ if (args.length < 3 || isNaN(Number(arg1)) || arg1.trim() === '') {
 } else {
   console.log(validResponse);
 }
-
