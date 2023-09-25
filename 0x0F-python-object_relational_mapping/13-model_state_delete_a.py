@@ -27,6 +27,5 @@ if __name__ == "__main__":
 
     for record in records:
         session.delete(record)
-    
+
     session.commit()
-    
