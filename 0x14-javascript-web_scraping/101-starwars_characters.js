@@ -2,7 +2,7 @@
 const request = require('request-promise');
 const url = 'https://swapi.co/api/films/' + process.argv[2];
 
-async function fetchFilmCharacters(url) {
+async function fetchFilmCharacters (url) {
   try {
     const body = await request(url);
     const film = JSON.parse(body);
@@ -13,7 +13,7 @@ async function fetchFilmCharacters(url) {
   }
 }
 
-async function printCharacters(characters) {
+async function printCharacters (characters) {
   for (const characterURL of characters) {
     try {
       const body = await request(characterURL);
